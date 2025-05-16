@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Twitter Bot Specific
+# --- IMPORTANT: Credentials and sensitive data ---
+# If you were to ever hardcode credentials for testing (NOT RECOMMENDED)
+# credentials.py # THIS SHOULD NOT EXIST IF USER PROVIDES CREDS INTERACTIVELY
+                  # OR IF IT CONTAINS TEMPLATES, ENSURE NO ACTUAL KEYS ARE COMMITTED.
+                  # Since this bot is interactive, we don't need a credentials.py with live keys.
+
+# --- Persistence files (These store runtime data, usually not for repo) ---
+*.txt
+# More specific if you prefer, but *.txt covers them all for this project:
+# liked_tweet_ids_interactive.txt
+# retweeted_tweet_ids_interactive.txt
+# followed_user_ids_interactive.txt
+# last_searched_id_interactive.txt
+
+# --- Log files ---
+*.log
+# More specific:
+# twitter_interactive_bot.log
+# bot_activity.log # If you used this older name
+
+# --- Operating System specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Python build artifacts ---
+dist/
+build/
+*.egg-info/
+*.egg
+
+# --- Coverage reports ---
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints
+
+# --- Other ---
+# Add any other files or directories you don't want to track
+# e.g., local configuration overrides, test data not for repo, etc.
+local_config.py
